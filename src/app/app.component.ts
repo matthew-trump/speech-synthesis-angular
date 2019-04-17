@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'speech-synthesis-angular';
+  title = 'Angular Speech Synthesis Demo';
+
+  routes: any[] = [
+    {
+      route: [''],
+      label: "Home"
+    },
+    {
+      route: ['google-text-to-speech'],
+      label: "Google TTS"
+    }
+  ]
 }
