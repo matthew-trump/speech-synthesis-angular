@@ -1,0 +1,49 @@
+#content{
+    display: flex;
+    #left{
+        flex-shrink: 0;
+
+        .navigationlinks{
+            list-style-type: none;
+            li{
+                margin-bottom: 0.2em;
+                span.arrow{
+                    color: white;
+                    padding-right: 0.2em;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 0.9em;
+                }
+                a:link{
+                    color: #333;
+                }
+                a:visited{
+                    color: #333;
+                }
+                a:hover{
+                    color: #c90;
+                }
+                
+            }
+            li.active-link{
+                span.arrow{
+                    color:#333;
+                    padding-right: 0.2em;
+                }
+                a:hover{
+                    color: #333;
+                }
+            }
+            li.entity{
+                text-transform: capitalize;
+            }
+           
+        }
+
+    }
+    #right{
+        margin-left: 4em;
+    }
+}
+
