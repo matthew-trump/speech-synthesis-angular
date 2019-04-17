@@ -1,0 +1,14 @@
+<h2>Google Text-to-Speech</h2>
+
+<p class="description">
+  This demo of how to use <a href="https://cloud.google.com/text-to-speech/">Google Cloud Text-to-Speech</a>
+  to generate and play audio from raw text or SSML.
+</p>
+
+
+<div class="input">
+  <h3>Speech Input (raw text or SSML)</h3>
+  <textarea matInput rows="10" #ssml [disabled]="processing"></textarea>
+</div>
+<button mat-raised-button (click)="send(ssml.value)" [disabled]="processing">send</button>
+<mat-spinner *ngIf="processing"></mat-spinner>
