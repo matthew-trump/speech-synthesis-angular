@@ -1,0 +1,9 @@
+<ul class="route-navigation">
+  <ng-container *ngFor="let r of routes">
+    <li routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+    true}">
+      <span class='route-navigation-symbol'>&#9656;</span>
+      <a [routerLink]="r.route">{{r.label}}</a>
+    </li>
+  </ng-container>
+</ul>
